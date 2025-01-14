@@ -1,38 +1,129 @@
+/* Establecemos una tipografía moderna y elegante */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
+/* Encabezado de la página */
 header {
-    background-color: #6200ea;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-main {
-    padding: 20px;
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
 }
 
-h1, h2 {
-    margin-bottom: 10px;
+header h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 10px;
 }
 
-section {
-    margin-bottom: 30px;
+/* Estilo de los contenedores de los temas */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-    list-style-type: square;
-    padding-left: 20px;
+/* Títulos de los subtemas */
+h3 {
+  font-size: 1.8em;
+  color: #34495e;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 10px;
 }
 
+/* Estilo de los párrafos */
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Estilo de los enlaces */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2c3e50;
+}
+
+/* Sección para el contenido embebido (iframe) */
+iframe {
+  display: block;
+  margin: 20px auto;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón estilizado */
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Pie de página */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Efectos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header h2 {
+    font-size: 1.3em;
+  }
 }
